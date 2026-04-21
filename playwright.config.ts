@@ -1,3 +1,5 @@
+/// <reference types="node" />
+
 import { defineConfig, devices } from '@playwright/test';
 import { EnvUtils } from './utils/envUtils';
 import path from 'path';
@@ -9,6 +11,7 @@ const runId = new Date().getTime();
 const STORAGE_STATE = path.join(__dirname, 'playwright/.auth/user.json');
 
 export default defineConfig({
+  
   testDir: './tests',
   fullyParallel: false,
   workers: 1,
@@ -21,11 +24,11 @@ export default defineConfig({
   reporter: [['html', { outputFolder: 'playwright-report/run-' + runId }]],
   
   use: {
-    baseURL: EnvUtils.BASE_URL,
-    actionTimeout: 50000,
-    trace: 'on',
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
+    /* Base URL to use in actions like `await page.goto('')`. */
+    // baseURL: 'http://localhost:3000',
+
+    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    trace: 'on-first-retry',
   },
 
   projects: [

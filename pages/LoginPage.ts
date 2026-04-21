@@ -1,7 +1,10 @@
 import { Page } from '@playwright/test';
 import { BasePage } from './BasePage';
-
+import { ForgotPasswordPage } from './ForgotPassword';
 export class LoginPage extends BasePage {
+  clickForgotPassword() {
+      throw new Error('Method not implemented.');
+  }
   constructor(page: Page) {
     super(page);
   }
