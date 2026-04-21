@@ -1,15 +1,17 @@
 {
-  "name": "team-project",
+  "name": "playwright-enterprise-framework",
   "version": "1.0.0",
-  "description": "",
+  "description": "Enterprise-ready Playwright POM Framework",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "report": "npx playwright show-report"
+  },
   "devDependencies": {
-    "@playwright/test": "^1.59.1",
-    "@types/node": "^25.5.2"
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "dotenv": "^16.6.1",
+    "typescript": "^5.0.0"
   }
 }
