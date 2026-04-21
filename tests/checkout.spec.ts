@@ -2,6 +2,7 @@ import { test, expect, Page } from '@playwright/test';
 import { CheckoutPage } from '../pages/CheckoutPage';
 import { EnvUtils } from '../utils/envUtils';
 
+
 test.describe('Checkout Functional Module', () => {
     
     test.beforeEach(async ({ page }) => {

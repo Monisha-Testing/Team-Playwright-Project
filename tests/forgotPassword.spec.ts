@@ -1,7 +1,8 @@
 import { test, expect, Page } from '@playwright/test';
-import { LoginPage } from '../pages/loginpage';
-import { ForgotPasswordPage } from '../pages/forgotpassword';
+import { LoginPage } from '../pages/LoginPage';
+import { ForgotPasswordPage } from '../pages/ForgotPassword';
 import { EnvUtils } from '../utils/envUtils';
+//import { ForgotPasswordPage } from '../pages/forgotpassword';
 
 test.describe('Forgot Password Module', () => {
 

@@ -1,7 +1,6 @@
 import { expect, Locator, Page } from '@playwright/test';
 
 
-
 /**
  * Abstract BasePage to be extended by all Page Objects.
  * Contains common reusable methods.

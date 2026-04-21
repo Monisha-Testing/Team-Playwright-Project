@@ -16,7 +16,7 @@ export class CheckoutPage extends BasePage {
     // Complete Page Locators
     public readonly successHeader: Locator;
 
-    constructor(page: Page) {
+    constructor(page: Page) { 
         super(page);
         this.firstNameInput = page.getByPlaceholder('First Name');
         this.lastNameInput = page.getByPlaceholder('Last Name');

@@ -19,4 +19,4 @@ export class ForgotPasswordPage extends BasePage {
         }
         await this.submitButton.click();
     }
-}
+}  
