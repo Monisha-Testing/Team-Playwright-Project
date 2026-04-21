@@ -135,7 +135,7 @@ export class FormSubmissionPage {
   }
 
   async navigateToHome() {
-    await this.page.goto('/');
+    await this.page.goto('https://practice.qabrains.com/');
   }
 
   async goToFormSubmissionPage() {

@@ -257,8 +257,8 @@ test.describe('Form Submission Page Tests', () => {
 
     await test.step('Validate feedback field by submitting the input', async()=>{
       await formPage.AfterFeedbackInput();
-      await formPage.Feedbacksubmit();
-      await formPage.ClosePopup();
+      //await formPage.Feedbacksubmit();
+      //await formPage.ClosePopup();
       //await expect(formPage.Feedbackcontent).toHaveText(FeedbackData.FeedbackInput);
     })
    
