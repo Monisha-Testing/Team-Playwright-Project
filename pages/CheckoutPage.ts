@@ -19,6 +19,7 @@ export class CheckoutPage extends BasePage {
     constructor(page: Page) { 
         super(page);
         this.firstNameInput = page.getByPlaceholder('First Name');
+        
         this.lastNameInput = page.getByPlaceholder('Last Name');
         this.zipCodeInput = page.getByPlaceholder('Zip/Postal Code');
         this.continueButton = page.getByRole('button', { name: 'Continue' });
@@ -35,7 +36,7 @@ export class CheckoutPage extends BasePage {
     }
 
     public async clearShippingDetails(): Promise<void> {
-        await this.firstNameInput.clear();
+        //await this.firstNameInput.clear();
         await this.lastNameInput.clear();
         await this.zipCodeInput.clear();
     }

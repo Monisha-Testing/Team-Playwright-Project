@@ -7,7 +7,7 @@ import { EnvUtils } from '../utils/envUtils';
 test.describe('Forgot Password Module', () => {
 
     test.beforeEach(async ({ page }) => {
-        await page.goto(EnvUtils.BASE_URL);
+        await page.goto('https://practice.qabrains.com/forgot-password');
     });
 
     test('TC-TS-001-001: Successful Password Reset Request with Valid Email', async ({ page }, testInfo) => {
