@@ -4,7 +4,7 @@ import { LoginPage } from '../pages/LoginPage';
 
 test('Login Test', async ({ page }) => {
   const login = new LoginPage(page);
-  await page.goto('/');
+  await page.goto('https://qabrains.com/practice-site');
   //await login.login('test@example.com', 'password');
   await page.getByRole('link', { name: 'Sign In' }).click();
   await page.goto('https://qabrains.com/auth/login');
